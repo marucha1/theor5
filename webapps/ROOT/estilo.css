@@ -1,0 +1,423 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Orbitron;
+	background:url(fondo.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.contenedor {
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+}
+
+#particles-js {
+	width:100%;
+	height:100%;
+	position: fixed;
+	background:rgba(0,0,0,0.8);
+}
+
+.texto {
+	color:rgb(235,125,16);
+	margin-right:35%; 
+	margin-left:35%;
+	height: 55%;
+	margin-bottom: 7%;
+	position: relative;
+	/*Posible solución a los problemas de capas delante-detrás
+	z-index*/
+	padding: 200px 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+.texto h2, .texto p {
+	background: rgba(0,0,0,0.7);
+	display: inline-block;
+	padding:10px 20px;
+}
+
+.texto h2 {
+	font-size: 50px;
+	letter-spacing: 2.5px;
+	font-weight: normal;
+}
+
+.texto p {
+	font-size:80%;
+	letter-spacing:2.5px;
+}
+
+.contenedorCorredizo {
+	width: 95%;
+	margin: auto;
+}
+
+.texto1 {
+
+	color:rgb(235,125,16);
+	margin-right:35%; 
+	margin-left:35%;
+	height: 55%;
+	margin-bottom: 0%;
+	position: relative;
+	/*Posible solución a los problemas de capas delante-detrás
+	z-index*/
+	padding: 200px 0;
+	text-align: center;
+	font-weight: 400;
+
+}
+
+.texto1 h2, .texto1 p {
+	background: rgba(0,0,0,0.7);
+	display: inline-block;
+	padding:10px 20px;
+}
+
+.texto1 h2 {
+	font-size: 50px;
+	letter-spacing: 2.5px;
+	font-weight: normal;
+}
+
+.texto1 p {
+	font-size:80%;
+	letter-spacing:2.5px;
+}
+
+.principal {
+	position: relative;
+	color:#000;
+}
+ 
+.mensComp {
+	display: inline-block;
+	width: 30%;
+	margin-right: 35%;
+	margin-left: 35%; 
+	margin-bottom: 2%;
+	color:rgb(235,125,16);
+	background-color: rgba(0,0,0,0);
+	text-align: center;
+}
+
+/*Con lo siguiente al texto de mensComp le
+hacemos parpadear*/
+
+.parpadea {
+	animation-name: parpadeo;
+	animation-duration: 1.25s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+	-webkit-animation-name:parpadeo;
+	-webkit-animation-duration:1.25s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {
+
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {
+
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+}
+
+
+#btnInv1, #btnInv2{
+	
+	text-align: center;
+	position:relative;
+	width: 80%;
+	height: 6%;
+	margin: 5% 10%;
+	font-weight: bold;
+	font-family: Orbitron;
+	font-size: 100%;
+	color: rgb(235,125,16);
+	border-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+
+}
+
+#btnInv1:hover, #btnInv2:hover{
+	
+	border-radius: 5%;
+	color: #000;
+	border-color: rgba(0,0,0,0);
+	background-color: rgb(235,125,16);
+
+
+}
+
+.Cbotones {
+	width:30%;
+	margin: 0 auto;
+}
+
+.botones {
+	display: inline-block;
+	position: relative;
+	height: 5%;
+	width:80%;
+	margin: 3% 10%;
+}
+
+.botones input {
+
+	font-weight: bold;
+	font-family: Orbitron;
+	font-size: 100%;
+	border-radius: 5%;
+	color: rgb(235,125,16);
+	border-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	width:100%;
+	height: 100%;
+}
+
+.botones input:hover {
+	color: #000;
+	border-color: rgba(0,0,0,0);
+	background-color: rgb(235,125,16);
+}
+
+.formularioLogin {
+	background: rgba(0,0,0,0);
+	position: relative;
+	height: 25%;
+	width: 60%;
+	margin:0 auto;
+}
+
+.itemFormulario1 {
+	position:relative;
+	height: 33%;
+
+}
+
+.etiquetaFormulario {
+	width:50%;
+	height:50%;
+	background: rgba(0,0,0,0);
+	color: rgb(235,125,16);
+	text-align: center;
+	display: inline-block;
+}
+
+.campoFormulario {
+	width: 50%;
+	height: 50%;
+	position: relative;
+	background:rgba(0,0,0,0.3);
+	border-color: rgb(235,125,16);
+	color: rgb(235,125,16);
+	left:50%;
+	bottom: 50%;
+	text-align: center;
+	display: inline-block;	
+}
+
+.btnFormulario1 {
+	position: relative;
+	height: 20%;
+	width:30%;
+	margin: 1.2% 35%;
+	font-weight: bold;
+	font-family: Orbitron;
+	font-size: 80%;
+	border-radius: 5%;
+	color: rgb(235,125,16);
+	border-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	
+}
+
+.btnFormulario1:hover {
+	color: #000;
+	border-color: rgba(0,0,0,0);
+	background-color: rgb(235,125,16);
+}
+
+.formularioRegistro {
+	position: relative;
+	margin: 0 auto;
+	
+}
+
+.itemFormulario2 {
+	position: relative;
+	height:10%;
+	margin: 0.2%;
+}
+
+
+.btnFormulario2 {
+	position: relative;
+	height: 5%;
+	width:20%;
+	margin: 2% 40%;
+	font-weight: bold;
+	font-family: Orbitron;
+	font-size: 80%;
+	border-radius: 5%;
+	color: rgb(235,125,16);
+	border-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	
+}
+
+.btnFormulario2:hover {
+	color: #000;
+	border-color: rgba(0,0,0,0);
+	background-color: rgb(235,125,16);
+}
+
+.itemIntroduccion {
+	color:rgb(235,125,16);
+}
+
+.itemIntroduccion p {
+	margin-bottom: 4%;
+}
+
+.itemIntroduccion h2{
+
+margin-bottom: 4%;
+font-size: 220%; 
+
+
+}
+
+.itemIntroduccion h3 {
+	margin-bottom: 1.5%;
+	font-size: 160%;
+}
+
+.itemFormulario3 {
+	position: relative;
+	width: 100%;
+	height: 30%;
+	margin: 2.5% 0;
+}
+
+.itemFormulario3 h5 {
+	margin-bottom: 0.5%;
+	font-style: italic;
+	color:rgb(235,125,16);
+	font-size: 110%;
+}
+
+.itemFormulario3 label {
+	color: rgb(235,125,16);
+	margin-right: 0.25%;
+	font-weight: medium;
+}
+
+.itemFormulario3 input {
+	margin-right: 2.5%;
+	background-color: rgba(0,0,0,0);
+	color:rgb(235,125,16);
+	border-color: rgb(235,125,16);
+
+}
+
+#E_Width, #E_Height, #E_maxSize {
+	font-size: 120%;
+}
+
+.itemFormulario3 p {
+	position: relative;
+	font-size: 80%;
+	font-weight: regular;
+	color:rgb(235,125,16);
+	text-align: justify;
+	margin-bottom: 1.5%;
+}
+
+.btnFormulario3 {
+	position: absolute;
+	height: 0.75%;
+	width:20%;
+	margin: 0% 40%;
+	font-weight: bold;
+	font-family: Orbitron;
+	font-size: 80%;
+	border-radius: 5%;
+	color: rgb(235,125,16);
+	border-color: rgba(0,0,0,0);
+	background-color: rgba(0,0,0,0);
+	
+}
+
+.btnFormulario3:hover {
+	color: #000;
+	border-color: rgba(0,0,0,0);
+	background-color: rgb(235,125,16);
+}
+
+#formularioConv45 {
+	position: absolute;
+	top: 1%;
+}
+
+/*Este paso y el siguiente del webkit habría que realizarlos para más
+navegadores, pero como si no nos encontramos en firefox no llegaremos a
+la diapositiva en la que usa no tiene mucho sentido hacer demás. Tampoco
+se llegará a ejecutar si no tenemos el correspondiente complemento de 
+Firefogg activado*/
+
+ progress {
+ 	-webkit-appearance: none;
+ 	-moz-appearance: none;
+ 	appearance: none;
+ }
+
+ progress {
+ 	border: 0;
+ 	margin: 0 10%;
+ 	width: 80%;
+ 	background-color: rgba(0,0,0,0.5);
+ 	
+  }
+
+ progress::-moz-progress-bar {
+ 	background-color: rgba(235,125,16,0.6);
+ 	-moz-border-radius: 4%;
+ 	-webkit-border-radius: 4%;
+ }
+
+
+
+.select1 {
+	color: rgba(235,125,16,1);
+	background: rgba(0,0,0,1);
+	border-color: rgba(235,125,16,1);
+}
+
+/*Se han utilizado, en parte, conocimientos obtenidos de Línea de Código,
+LibrosWeb, FalconMasters, CodePen: Sekane81*/

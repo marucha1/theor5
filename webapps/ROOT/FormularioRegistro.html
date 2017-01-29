@@ -1,0 +1,97 @@
+<DOCTYPE! html>
+<html lang = "en">
+<head>
+	<title>Theor</title>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cormorant+SC|Orbitron" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+	<script type="text/javascript" src = "JQuery.js"></script>
+</head>
+<body>
+
+	<div id = "particles-js"></div>
+
+	<div class = "texto1">
+		<h2>Theor</h2>
+		<br>
+		<p>El otro software de conversión</p>
+	</div>
+
+	<div class = "principal contenedor">
+
+		<form class = "formularioRegistro" action = "" method="POST">
+
+			<!Hay una etiqueta por cada campo>
+			<!Las id's identifican a cada submit y lo enlazan con su correspondiente label, si clickas en el label, es como si clickaras en el campo>
+			<!Con la etiqueta required se especifica la necesidad de introducir ese campo>
+
+			<div class = "itemFormulario2">
+				<label for = "E_User_Name" class = "etiquetaFormulario">Ingrese su nombre de usuario:</label>
+				<input  class = "campoFormulario" type = "text" placeholder = "Nombre de usuario" id = "E_User_Name" required>
+			</div>
+
+			<div class = "itemFormulario2">
+				<label for = "E_Password" class = "etiquetaFormulario">Ingrese su contraseña:</label>
+				<input  class = "campoFormulario" type = "password" placeholder = "Contraseña" id = "E_Password" required>
+			</div>
+
+			<!La etiqueta email no la soportan todos lo navegadores es de las más modernas de HTML5 y nos informa si el valor introducido en el campo correo es un correo válido o no lo es>
+			<div class = "itemFormulario2">
+				<label for = "E_email" class = "etiquetaFormulario">Ingrese su correo electrónico:</label>
+				<input  class = "campoFormulario" type = "email" placeholder = "Correo electrónico" id = "E_email" required>
+			</div>
+
+			<!A los radioButtons les ponemos el mismo nombre a ambos porque el usuario solo puede seleccionar uno de los dos>
+			<div class = "itemFormulario2">
+				<label for = "E_Mujer" class = "etiquetaFormulario">Mujer:</label>
+				<input  class = "radio" type="radio" id="E_Mujer" name = "Sexo">
+			</div>
+			<div class = "itemFormulario2">
+				<label for = "E_Hombre" class = "etiquetaFormulario">Hombre:</label>
+				<input  class = "radio" type="radio" id="E_Hombre" name = "Sexo">
+			</div>
+
+			<!Otra etiqueta de HTML5 para el campo de la edad, damos un valor mínimo al campo, un máximo y la cantidad en la que se incrementa>
+			<div class = "itemFormulario2">
+				<label for = "E_Age" class = "etiquetaFormulario">Introduzca su edad:</label>
+				<input  class = "campoFormulario" type = "number" id = "E_Age" placeholder ="Solo valores enteros del 0 al 100" step = "1" min = "0" max = "100">
+			</div>
+
+			<!Desplegable para la selección de procedencia>
+			<div class = "itemFormulario2">
+				<label for = "E_Procedencia" class = "etiquetaFormulario">Introduzca su procedencia</label>
+				<select class = "select1" id = "E_Procedencia">
+
+					<option  value = "Europa">Europa</option>
+				
+					<option  value = "América del Norte">América del Norte</option>
+
+					<option  value = "América Latina">América Latina</option>
+
+					<option  value = "Asia">Asia</option>
+
+					<option  value = "África">África</option>
+
+					<option  value = "Oceanía">Oceanía</option>
+
+				</select>
+			</div>
+
+			<!Más allá de los datos para la estructura lógica solo importa este botón>
+
+			<input class = "btnFormulario2" type = "submit" value = "Registrado">
+
+			<!Ahora volveríamos a la Pagina Inicial, y esta vez clickaríamos en Inicia Sesión. Por lo que ahora vamos directamente a donde nos lleva ese submit, al FormularioLogin.html>
+
+		</form>
+	</div>
+
+	<script type="text/javascript" src = "particles.js"></script>
+	<script type="text/javascript" src = "configuracion.js"></script>
+
+
+</body>
+<!Hecho con información obtenida de FalconMasters,Anner Barrena, Mozilla Developer Network, Htmlquick y Cybmeta>
+</html>

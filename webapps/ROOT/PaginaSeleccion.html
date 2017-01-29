@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+	<!La idea es que cuando uno completa el formulario de conversión, s recogen los datos, se forma un JavaScript personalizado con los parámetros adecuados y se coloca al final de esta página; que no es más que el fondo con una barra de cargado. Modifico el método actualizarProgreso del Firefogg para que cuando este termine, reescriba por completo el documento mostrando lo que sería paginaExito, así metemos dos páginas en una.>
+
+<head>
+	<title>Theor</title>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cormorant+SC|Orbitron" rel="stylesheet"> 
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+	<script type="text/javascript" src = "JQuery.js"></script>
+	<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Orbitron;
+		background:url(fondo.png);
+		background-size: cover;
+		background-attachment: fixed;
+	}	
+
+	.contenedor {
+		width:90%;
+		max-width:1000px;
+		margin:auto;
+	}
+
+	#particles-js {
+		width:100%;
+		height:100%;
+		position: fixed;
+		background:rgba(0,0,0,0.8);
+	}
+
+	.texto {
+		color:rgb(235,125,16);
+		margin-right:35%; 
+		margin-left:35%;
+		height: 55%;
+		margin-bottom: 7%;
+		position: relative;
+		/*Posible solución a los problemas de capas delante-detrás
+		z-index*/
+		padding: 200px 0;
+		text-align: center;
+		font-weight: 400;
+	}
+
+	.texto h2, .texto p {
+		background: rgba(0,0,0,0.7);
+		display: inline-block;
+		padding:10px 20px;
+	}
+
+	.texto h2 {
+		font-size: 50px;
+		letter-spacing: 2.5px;
+		font-weight: normal;
+	}
+
+	.texto p {
+		font-size:80%;
+		letter-spacing:2.5px;
+	}
+
+	.principal {
+		position: relative;
+		color:#000;
+	}
+ 
+	.mensComp {
+		display: inline-block;
+		width: 30%;
+		margin-right: 35%;
+		margin-left: 35%; 
+		margin-bottom: 2%;
+		color:rgb(235,125,16);
+		background-color: rgba(0,0,0,0);
+		text-align: center;
+	}
+
+	.parpadea {
+		animation-name: parpadeo;
+		animation-duration: 1.25s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+
+		-webkit-animation-name:parpadeo;
+		-webkit-animation-duration:1.25s;
+		-webkit-animation-timing-function:linear;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+	@-moz-keyframes parpadeo {
+
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+
+	@-webkit-keyframes parpadeo {
+
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+
+	@keyframes parpadeo {
+
+		0% { opacity: 1.0; }
+		50% { opacity: 0.0; }
+		100% { opacity: 1.0; }
+	}
+
+
+	#btnInv1, #btnInv2{
+		text-align: center;
+		position:relative;
+		width: 80%;
+		height: 6%;
+		margin: 5% 10%;
+		font-weight: bold;
+		font-family: Orbitron;
+		font-size: 100%;
+		color: rgb(235,125,16);
+		border-color: rgba(0,0,0,0);
+		background-color: rgba(0,0,0,0);
+	}
+
+	#btnInv1:hover, #btnInv2:hover{
+		border-radius: 5%;
+		color: #000;
+		border-color: rgba(0,0,0,0);
+		background-color: rgb(235,125,16);
+
+	}
+
+	.Cbotones {
+		width:30%;
+		margin: 0 auto;
+	}
+
+	.botones {
+		display: inline-block;
+		position: relative;
+		height: 5%;
+		width:80%;
+		margin: 3% 10%;
+	}
+
+	progress {
+ 		-webkit-appearance: none;
+ 		-moz-appearance: none;
+ 		appearance: none;
+ 	}
+
+ 	progress {
+ 		border: 0;
+ 		margin: 0 10%;
+ 		width: 80%;
+ 		background-color: rgba(0,0,0,0.5);
+  	}
+
+ 	progress::-moz-progress-bar {
+ 		background-color: rgba(235,125,16,0.6);
+ 		-moz-border-radius: 4%;
+ 		-webkit-border-radius: 4%;
+ 	}
+	</style>
+</head>
+
+<body>
+
+	<div id = "particles-js"></div>
+
+	<div class = "texto">
+		<h2>Theor</h2>
+		<br>
+		<p>El otro software de conversión</p>
+	</div>
+
+	<div id = "BB-8" class = "parpadea mensComp"><p>Codificación Completada</p></div>
+
+	<div class = "contenedor principal">
+		<progress id = "progressbar" value = "0" max = "10000"></progress>
+
+		<form id = "formI" class = "Cbotones" action= "" method = "POST">
+			<input type = "submit" value = "Volver" id = "btnInv1" class = "botones">
+		</form>
+
+		<form id = "formII" class = "Cbotones" action= "" method = "POST">
+			<input type = "submit" value = "Cerrar Sesión" id = "btnInv1" class = "botones">
+		</form>
+	</div>
+	<script type="text/javascript">
+	(function () {
+		/*Esto está demostrado que funciona que esconde los contenedores*/
+		function esconde () {
+			var mensaje = document.getElementById("BB-8");
+			mensaje.style.display='none';
+
+			var formularioI = document.getElementById("formI");
+			formularioI.style.display='none';
+
+			var formularioII = document.getElementById("formII");
+			formularioII.style.display='none';
+		}
+		esconde();
+		
+	}())
+	</script>
+	<script type="text/javascript">
+	if(typeof(Firefogg) == 'undefined') {
+  	alert('You dont have Firefogg, please go to http://firefogg.org to install it');
+ 	window.open('http://firefogg.org');
+	}
+
+	var ogg = new Firefogg();
+
+	if(ogg.selectVideo()) {
+  		var options = JSON.stringify({'width': 1});
+  		ogg.encode(options,
+            function(result, file) {
+                result = JSON.parse(result);
+                update_progress(result.progress, result.state);
+
+
+                var xhr = new XMLHttpRequest();
+                xhr.addEventListener('progress', function(e) {
+                    var progress = e.position || e.loaded, total = e.totalSize || e.total;
+                    update_progress(progress, 'uploading');
+                }, false);
+                xhr.open('post', uploadUrl, true);
+                xhr.send(file)
+            },
+            function(progress) {
+                progress = JSON.parse(progress);
+                update_progress(progress.progress, progress.state);
+            }
+    	);
+	}
+
+
+	function update_progress(progress, text) {
+    	var progressbar = document.getElementById('progressbar');
+    	var relleno = parseInt(progress*10000);
+    	progressbar.setAttribute("value",relleno);
+    	if (relleno == 10000) {
+      	muestra();
+    	}
+	}
+
+	function muestra () {
+			var mensaje = document.getElementById("BB-8");
+			mensaje.style.display='block';
+
+			var formularioI = document.getElementById("formI");
+			formularioI.style.display='block';
+
+			var formularioII = document.getElementById("formII");
+			formularioII.style.display='block';
+		}
+	</script>
+	<script type="text/javascript" src = "particles.js"></script>
+	<script type="text/javascript" src = "configuracion.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html lang = "en">
+<head>
+	<title>Theor</title>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cormorant+SC|Orbitron" rel="stylesheet"> 
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript" src = "JQuery.js"></script>
+</head>
+<body>
+	<!Únicamente son necesarios dos campos de texto, usuario y constraseña, y luego el botón de aceptar>
+
+	<div id = "particles-js"></div>
+
+	<div class = "texto1">
+		<h2>Theor</h2>
+		<br>
+		<p>El otro software de conversión</p>
+	</div>
+
+	<div class = "principal contenedor">
+		<form class = "formularioLogin" action = "Estructura" method="POST">
+				<div class = "itemFormulario1">
+					<label class = "etiquetaFormulario"id = "E_User_Name_2">Introduzca su nombre de usuario:</label>
+					<input class = "campoFormulario" type = "text" id = "E_User_Name_2" placeholder = "Nombre de usuario" required>
+				</div>
+				
+				<div class = "itemFormulario1"> 
+					<label class = "etiquetaFormulario" id = "E_Password_2">Introduzca su contraseña:</label>
+					<input class = "campoFormulario" type = "password" id = "E_Password_2" placeholder = "Contraseña" required>
+				</div>
+
+				<!Estas etiquetas tienen restricciones de que no pueden estar vacías,eso y el que no coincidan usuario y contraseña en la base de datos nos darían un fallo al apretar el submit de abjo que nos redireccionaría a esta página otra vez; hasta que lo hiciéramos bien. Lo damos por bien hecho y nos lleva a PaginaConversion.html>
+				<input class = "btnFormulario1" name = "nombreBoton" type = "submit" value = "Iniciar Sesion">
+		</form>
+		<form class = "formularioLogin"  action="Estructura" method = "POST">
+				<input class = "btnFormulario1" name = "nombreBoton" type = "submit" value = "Registrarse">
+		</form>
+	</div>
+
+	
+	<script type="text/javascript" src = "particles.js"></script>
+	<script type="text/javascript" src = "configuracion.js"></script>
+
+</body>
+</html>

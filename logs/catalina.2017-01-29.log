@@ -1,0 +1,186 @@
+29-Jan-2017 16:46:59.716 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.11
+29-Jan-2017 16:46:59.724 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 10 2017 21:02:52 UTC
+29-Jan-2017 16:46:59.725 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.11.0
+29-Jan-2017 16:46:59.726 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+29-Jan-2017 16:46:59.727 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-59-generic
+29-Jan-2017 16:46:59.728 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          i386
+29-Jan-2017 16:46:59.728 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+29-Jan-2017 16:46:59.729 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+29-Jan-2017 16:46:59.730 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jan-2017 16:46:59.731 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:46:59.732 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:46:59.733 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/conf/logging.properties
+29-Jan-2017 16:46:59.734 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jan-2017 16:46:59.735 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jan-2017 16:46:59.736 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jan-2017 16:46:59.736 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:46:59.737 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:46:59.738 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/temp
+29-Jan-2017 16:46:59.739 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /usr/java/packages/lib/i386:/lib:/usr/lib
+29-Jan-2017 16:47:00.167 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:47:00.222 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 16:47:00.231 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:47:00.239 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 16:47:00.240 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1514 ms
+29-Jan-2017 16:47:00.296 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+29-Jan-2017 16:47:00.296 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.11
+29-Jan-2017 16:47:00.326 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/host-manager de la aplicación web
+29-Jan-2017 16:47:01.155 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/host-manager has finished in 827 ms
+29-Jan-2017 16:47:01.156 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/manager de la aplicación web
+29-Jan-2017 16:47:01.196 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/manager has finished in 41 ms
+29-Jan-2017 16:47:01.196 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/examples de la aplicación web
+29-Jan-2017 16:47:01.900 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/examples has finished in 703 ms
+29-Jan-2017 16:47:01.901 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT de la aplicación web
+29-Jan-2017 16:47:01.961 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT has finished in 59 ms
+29-Jan-2017 16:47:01.962 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/docs de la aplicación web
+29-Jan-2017 16:47:02.045 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/docs has finished in 83 ms
+29-Jan-2017 16:47:02.046 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/Servlet_Estructura de la aplicación web
+29-Jan-2017 16:47:02.147 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/Servlet_Estructura has finished in 100 ms
+29-Jan-2017 16:47:02.153 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+29-Jan-2017 16:47:02.167 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+29-Jan-2017 16:47:02.169 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 1929 ms
+29-Jan-2017 16:48:08.486 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+29-Jan-2017 16:48:08.494 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:48:08.505 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:48:08.520 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+29-Jan-2017 16:48:08.713 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:48:08.724 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:48:08.726 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:48:08.729 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:51:36.888 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.11
+29-Jan-2017 16:51:36.893 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 10 2017 21:02:52 UTC
+29-Jan-2017 16:51:36.894 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.11.0
+29-Jan-2017 16:51:36.894 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+29-Jan-2017 16:51:36.894 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-59-generic
+29-Jan-2017 16:51:36.895 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          i386
+29-Jan-2017 16:51:36.895 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+29-Jan-2017 16:51:36.896 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+29-Jan-2017 16:51:36.896 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jan-2017 16:51:36.896 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:51:36.897 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:51:36.898 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/conf/logging.properties
+29-Jan-2017 16:51:36.899 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jan-2017 16:51:36.900 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jan-2017 16:51:36.901 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jan-2017 16:51:36.901 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:51:36.902 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:51:36.902 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/temp
+29-Jan-2017 16:51:36.903 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /usr/java/packages/lib/i386:/lib:/usr/lib
+29-Jan-2017 16:51:37.282 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:51:37.326 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 16:51:37.332 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:51:37.335 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 16:51:37.338 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1441 ms
+29-Jan-2017 16:51:37.421 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+29-Jan-2017 16:51:37.422 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.11
+29-Jan-2017 16:51:37.446 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/host-manager de la aplicación web
+29-Jan-2017 16:51:38.613 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/host-manager has finished in 1.163 ms
+29-Jan-2017 16:51:38.613 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/manager de la aplicación web
+29-Jan-2017 16:51:38.688 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/manager has finished in 75 ms
+29-Jan-2017 16:51:38.689 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/examples de la aplicación web
+29-Jan-2017 16:51:39.598 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/examples has finished in 908 ms
+29-Jan-2017 16:51:39.599 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT de la aplicación web
+29-Jan-2017 16:51:39.626 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT has finished in 28 ms
+29-Jan-2017 16:51:39.627 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/docs de la aplicación web
+29-Jan-2017 16:51:39.659 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/docs has finished in 32 ms
+29-Jan-2017 16:51:39.690 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/Servlet_Estructura de la aplicación web
+29-Jan-2017 16:51:39.759 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/Servlet_Estructura has finished in 70 ms
+29-Jan-2017 16:51:39.771 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+29-Jan-2017 16:51:39.794 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+29-Jan-2017 16:51:39.811 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 2472 ms
+29-Jan-2017 16:52:08.386 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+29-Jan-2017 16:52:08.387 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:52:08.446 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:52:08.448 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+29-Jan-2017 16:52:08.508 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:52:08.513 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:52:08.515 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:52:08.516 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:53:27.172 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.11
+29-Jan-2017 16:53:27.180 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 10 2017 21:02:52 UTC
+29-Jan-2017 16:53:27.181 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.11.0
+29-Jan-2017 16:53:27.181 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+29-Jan-2017 16:53:27.182 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-59-generic
+29-Jan-2017 16:53:27.183 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          i386
+29-Jan-2017 16:53:27.183 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+29-Jan-2017 16:53:27.184 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+29-Jan-2017 16:53:27.185 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jan-2017 16:53:27.186 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:53:27.187 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:53:27.188 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/conf/logging.properties
+29-Jan-2017 16:53:27.189 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jan-2017 16:53:27.190 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jan-2017 16:53:27.191 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jan-2017 16:53:27.191 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:53:27.192 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 16:53:27.193 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/temp
+29-Jan-2017 16:53:27.194 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /usr/java/packages/lib/i386:/lib:/usr/lib
+29-Jan-2017 16:53:27.489 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:53:27.523 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 16:53:27.532 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:53:27.535 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 16:53:27.536 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1417 ms
+29-Jan-2017 16:53:27.610 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+29-Jan-2017 16:53:27.611 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.11
+29-Jan-2017 16:53:27.639 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/host-manager de la aplicación web
+29-Jan-2017 16:53:28.472 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/host-manager has finished in 831 ms
+29-Jan-2017 16:53:28.473 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/manager de la aplicación web
+29-Jan-2017 16:53:28.512 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/manager has finished in 39 ms
+29-Jan-2017 16:53:28.513 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/examples de la aplicación web
+29-Jan-2017 16:53:29.255 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/examples has finished in 742 ms
+29-Jan-2017 16:53:29.256 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT de la aplicación web
+29-Jan-2017 16:53:29.360 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT has finished in 103 ms
+29-Jan-2017 16:53:29.384 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT.OLD de la aplicación web
+29-Jan-2017 16:53:29.409 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT.OLD has finished in 25 ms
+29-Jan-2017 16:53:29.409 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/docs de la aplicación web
+29-Jan-2017 16:53:29.432 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/docs has finished in 23 ms
+29-Jan-2017 16:53:29.438 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+29-Jan-2017 16:53:29.452 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+29-Jan-2017 16:53:29.475 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 1938 ms
+29-Jan-2017 16:54:12.020 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+29-Jan-2017 16:54:12.021 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:54:12.033 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:54:12.035 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+29-Jan-2017 16:54:12.098 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:54:12.106 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 16:54:12.107 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 16:54:12.109 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 17:03:42.248 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.11
+29-Jan-2017 17:03:42.254 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jan 10 2017 21:02:52 UTC
+29-Jan-2017 17:03:42.254 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.11.0
+29-Jan-2017 17:03:42.254 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+29-Jan-2017 17:03:42.254 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-59-generic
+29-Jan-2017 17:03:42.254 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          i386
+29-Jan-2017 17:03:42.255 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+29-Jan-2017 17:03:42.257 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+29-Jan-2017 17:03:42.257 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Jan-2017 17:03:42.257 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 17:03:42.257 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 17:03:42.259 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/conf/logging.properties
+29-Jan-2017 17:03:42.259 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Jan-2017 17:03:42.260 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Jan-2017 17:03:42.261 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Jan-2017 17:03:42.262 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 17:03:42.262 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11
+29-Jan-2017 17:03:42.265 INFORMACIÓN [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/temp
+29-Jan-2017 17:03:42.266 INFORMACIÓN [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent La biblioteca nativa de Apache Tomcat basada en ARP que permite un rendimiento óptimo en entornos de desarrollo no ha sido hallada en java.library.path: /usr/java/packages/lib/i386:/lib:/usr/lib
+29-Jan-2017 17:03:42.699 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 17:03:42.734 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 17:03:42.746 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 17:03:42.749 INFORMACIÓN [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+29-Jan-2017 17:03:42.750 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1531 ms
+29-Jan-2017 17:03:42.840 INFORMACIÓN [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio Catalina
+29-Jan-2017 17:03:42.840 INFORMACIÓN [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.11
+29-Jan-2017 17:03:42.863 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Despliegue del directorio /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT de la aplicación web
+29-Jan-2017 17:03:43.679 INFORMACIÓN [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/mario/Escritorio/Tomcats/apache-tomcat-8.5.11/webapps/ROOT has finished in 814 ms
+29-Jan-2017 17:03:43.689 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [http-nio-8080]
+29-Jan-2017 17:03:43.704 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler [ajp-nio-8009]
+29-Jan-2017 17:03:43.707 INFORMACIÓN [main] org.apache.catalina.startup.Catalina.start Server startup in 956 ms
+29-Jan-2017 17:04:09.775 INFORMACIÓN [main] org.apache.catalina.core.StandardServer.await Se ha recibido un comando de apagado a través del puerto de apagado. Parando la instancia del Servidor.
+29-Jan-2017 17:04:09.776 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 17:04:09.784 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 17:04:09.786 INFORMACIÓN [main] org.apache.catalina.core.StandardService.stopInternal Parando servicio Catalina
+29-Jan-2017 17:04:09.826 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 17:04:09.827 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+29-Jan-2017 17:04:09.829 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Jan-2017 17:04:09.830 INFORMACIÓN [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

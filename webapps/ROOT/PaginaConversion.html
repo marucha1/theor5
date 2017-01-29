@@ -1,0 +1,132 @@
+<html lang = "en">
+<head>
+	<title>Theor</title>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cormorant+SC|Orbitron" rel="stylesheet"> 
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+	<script type="text/javascript" src = "JQuery.js"></script>
+	<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Orbitron;
+		background:url(fondo.png);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	.contenedor {
+		width:90%;
+		max-width:1000px;
+		margin:auto;
+	}	
+
+	#particles-js {
+		width:100%;
+		height:100%;
+		position: fixed;
+		background:rgba(0,0,0,0.8);
+	}
+
+	.texto {
+		color:rgb(235,125,16);
+		margin-right:35%; 
+		margin-left:35%;
+		height: 55%;
+		margin-bottom: 7%;
+		position: relative;
+		/*Posible solución a los problemas de capas delante-detrás
+		z-index*/
+		padding: 200px 0;
+		text-align: center;
+		font-weight: 400;
+	}
+
+	.texto h2, .texto p {
+		background: rgba(0,0,0,0.7);
+		display: inline-block;
+		padding:10px 20px;
+	}
+
+	.texto h2 {
+		font-size: 50px;
+		letter-spacing: 2.5px;
+		font-weight: normal;
+	}
+
+	.texto p {
+		font-size:80%;
+		letter-spacing:2.5px;
+	}
+
+	.Cbotones {
+		width:30%;
+		margin: 0 auto;
+	}
+
+	.botones {
+		display: inline-block;
+		position: relative;
+		height: 5%;
+		width:80%;
+		margin: 3% 10%;
+	}
+
+	.botones input {
+		font-weight: bold;
+		font-family: Orbitron;
+		font-size: 100%;
+		border-radius: 5%;
+		color: rgb(235,125,16);
+		border-color: rgba(0,0,0,0);
+		background-color: rgba(0,0,0,0);
+		width:100%;
+		height: 100%;
+	}	
+
+	.botones input:hover {
+		color: #000;
+		border-color: rgba(0,0,0,0);
+		background-color: rgb(235,125,16);
+	}
+
+	</style>
+</head>
+<body>
+	<!Esta página son una vez más dos botones que redireccionan a otras dos, una para consultar el historial y la otra el formulario de conversión, en el caso de que hagamos historial, de momento tomamos un botón como inexistente y solo podemos darle al de CONVERTIR, que nos lleva a FormularioConversion.html>
+	<!Aquí están los dos submit en un mismo formulario, como antes, como mejor te vaya>
+	<div id = "particles-js"></div>
+
+	<div class = "texto">
+		<h2>Theor</h2>
+		<br>
+		<p>El otro software de conversión</p>
+	</div>
+
+	<div class = "principal contenedor">
+		<div class = "CBotones">
+			<form class = "botones" action = "" method = "POST">
+				<input type = "submit" value ="Convertir">
+			</form>
+
+			<form class = "botones" action = "" method = "POST">
+				<input type = "submit" value = "Historial">
+			</form>
+		</div>
+	</div>
+	
+
+	
+	<script type="text/javascript" src = "particles.js"></script>
+	<script type="text/javascript" src = "configuracion.js"></script>
+
+</body>
+</html>

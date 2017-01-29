@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+	<title>Theor</title>
+	<meta charset="UTF-8">
+	<meta name= "viewport" content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cormorant+SC|Orbitron" rel="stylesheet"> 
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+	<script type="text/javascript" src = "JQuery.js"></script>
+	<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Orbitron;
+		background:url(fondo.png);
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	.contenedor {
+		width:90%;
+		max-width:1000px;
+		margin:auto;
+	}
+
+	#particles-js {
+		width:100%;
+		height:100%;
+		position: fixed;
+		background:rgba(0,0,0,0.8);
+	}
+
+	.texto1 {
+
+		color:rgb(235,125,16);
+		margin-right:35%; 
+		margin-left:35%;
+		height: 55%;
+		margin-bottom: 0%;
+		position: relative;
+		/*Posible solución a los problemas de capas delante-detrás
+		z-index*/
+		padding: 200px 0;
+		text-align: center;
+		font-weight: 400;
+
+	}
+
+	.texto1 h2, .texto1 p {
+		background: rgba(0,0,0,0.7);
+		display: inline-block;
+		padding:10px 20px;
+	}
+
+	.texto1 h2 {
+		font-size: 50px;
+		letter-spacing: 2.5px;
+		font-weight: normal;
+	}
+
+	.texto1 p {
+		font-size:80%;
+		letter-spacing:2.5px;
+	}
+
+	.principal {
+		position: relative;
+		color:#000;
+	}
+
+	.itemIntroduccion {
+		color:rgb(235,125,16);
+	}
+
+	.itemIntroduccion p {
+		margin-bottom: 4%;
+	}
+
+	.itemIntroduccion h2{
+		margin-bottom: 4%;
+		font-size: 220%; 
+	}
+
+	.itemIntroduccion h3 {
+		margin-bottom: 1.5%;
+		font-size: 160%;
+	}
+
+	.itemFormulario3 {
+		position: relative;
+		width: 100%;
+		height: 30%;
+		margin: 2.5% 0;
+	}
+
+	.itemFormulario3 h5 {
+		margin-bottom: 0.5%;
+		font-style: italic;
+		color:rgb(235,125,16);
+		font-size: 110%;
+	}	
+
+	.itemFormulario3 label {
+		color: rgb(235,125,16);
+		margin-right: 0.25%;
+		font-weight: medium;
+	}
+
+	.itemFormulario3 input {
+		margin-right: 2.5%;
+		background-color: rgba(0,0,0,0);
+		color:rgb(235,125,16);
+		border-color: rgb(235,125,16);
+	}
+
+	#E_Width, #E_Height, #E_maxSize {
+		font-size: 120%;
+	}
+
+	.itemFormulario3 p {
+		position: relative;
+		font-size: 80%;
+		font-weight: regular;
+		color:rgb(235,125,16);
+		text-align: justify;
+		margin-bottom: 1.5%;
+	}
+
+	.btnFormulario3 {
+		position: absolute;
+		height: 0.75%;
+		width:20%;
+		margin: 0% 40%;
+		font-weight: bold;
+		font-family: Orbitron;
+		font-size: 80%;
+		border-radius: 5%;
+		color: rgb(235,125,16);
+		border-color: rgba(0,0,0,0);
+		background-color: rgba(0,0,0,0);
+	}
+
+	.btnFormulario3:hover {
+		color: #000;
+		border-color: rgba(0,0,0,0);
+		background-color: rgb(235,125,16);
+	}
+
+	#formularioConv45 {
+		position: absolute;
+		top: 1%;
+	}
+	</style>
+</head>
+<body>
+
+	<div id = "particles-js"></div>
+
+	<div class = "texto1">
+		<h2>Theor</h2>
+		<br>
+		<p>El otro software de conversión</p>
+	</div>
+
+	<div class = "principal contenedor">
+
+		<!En esta página se muestran todas las opciones de personalización del vídeo que nos permite el proyecto porque son las que soporta Firefogg.>
+		<!Todos los datos que remite este formulario, uno de los más importantes, deben ser recogidos por el servlet, y en base a ellos crear el Firefogg personalizado para mandar a ese usuario en concreto y codificar/editar el vídeo según lo quiera el usuario>
+
+		<!IMPORTANTE: si quieres comprobar los valores hazlo, pero el submit está al final del todo y solo hay uno>
+	
+		<form id = "formularioConv45" action = "Generador" method="POST">
+
+			<div class = "itemIntroduccion">
+
+				<h2>Codificación del Vídeo</h2>
+				
+				<h3>Instrucciones de uso:</h3>
+		
+				<p>Seleccione de entre las opciones dadas para cada campo una opción de codificación. Algunos campos son imprescindibles para el tratamiento del vídeo.</p>
+		
+				<h3>Opciones de codificación:</h3>
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Codec de Vídeo</h5>
+
+				<p>Seleccione el codec de vídeo web adecuado para su página web:
+				</p>
+
+				<label for = "E_Theora">Theora:</label>
+				<input type = "radio"  value = "theora" id = "E_Theora" name = "codecV"  required>
+		
+				<label for = "E_VP8">VP8:</label>
+				<input type = "radio" value = "vp8" id = "E_VP8" name = "codecV"  required>
+		
+				<label for = "E_VP9">VP9:</label>
+				<input type = "radio" value = "vp9" id = "E_VP9" name = "codecV"  required>
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Codec de Audio</h5>
+	
+				<p>Seleccione el codec de audio adecuado para el vídeo de su página web:</p>
+
+				<label for = "E_Opus">Opus:</label>
+				<input type = "radio" id = "E_Opus" value = "opus" name = "codecA" required>
+				<label for = "E_Vorbis">Vorbis:</label>
+				<input type = "radio" id = "E_Vorbis" value = "vorbis" name = "codecA" required>
+
+				<!Ahora otra etiqueta específica de HTML5>
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Anchura del Vídeo</h5>
+
+				<p>Seleccione la anchura que presentará el vídeo a la hora de reproducirse. Es importante que en el caso de que quiera obtener un vídeo con dimensiones proporcionadas, deberá dejar este campo o el de altura sin seleccionar, para recalcular automáticamente las dimensiones. Por el contrario o bien especifica las dimensiones adecuadas u obtendrá un vídeo desproporcionado. Solo se admiten valores enteros.
+				</p>
+
+				<label for = "E_Width">Anchura:</label>
+				<input type = "number" id = "E_Width" value = "0" name = "E_Width" min = "0" step = "1">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Altura del Vídeo</h5>
+
+				<p>Seleccione la altura que presentará el vídeo a la hora de reproducirse. Es importante que en el caso de que quiera obtener un vídeo con dimensiones proporcionadas, deberá dejar este campo o el de anchura sin seleccionar, para recalcular automáticamente las dimensiones. Por el contrario o bien especifica las dimensiones adecuadas u obtendrá un vídeo desproporcionado. Solo se admiten valores enteros.
+				</p>
+
+				<label for = "E_Height">Altura:</label>
+				<input type = "number" value = "0" id = "E_Height" name = "E_Height" min = "0" step = "1">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Tamaño</h5>
+
+				<p>Otra manera de definir el tamaño de la reproducción mediante una relación ancho/alto. Solo válido si no se ha especificado el tamaño anteriormente. Únicamente se admiten enteros.
+				</p>
+
+				<label for = "E_maxSize">Tamaño:</label>
+				<input type = "number" value = "0" id = "E_maxSize" name = "E_maxSize" min = "0" step = "1">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Calidad del vídeo</h5>
+
+				<p>Forma de reducir el peso del vídeo seleccionado asignándole una calidad entre 0 y 10. Donde 10 es el valor de la calidad dada y 5 el valor por defecto.
+				</p>
+
+				<label for = "E_videoQuality">Calidad del vídeo:</label>
+				<input type = "range" id = "E_videoQuality" value = '5' name = "E_videoQuality" min = "0" max = "10">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Tasa de Bits para el vídeo</h5>
+
+				<p>En valores enteros del 1 al 16778, velocidad en Kb/s a la que queremos que se desarrolle la codificación del vídeo. Por defecto toma un valor de 100.
+				</p>
+
+				<label for = "E_videoBitrate">Tasa de Bits (video):</label>
+				<input type = "range" id = "E_videoBitrate" value = "100" name = "E_videoBitrate" min = "1" step = "1" max = "16778">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Calidad de audio</h5>
+
+				<p>De -1.0 a 10.0 con valor por defecto de 1.0 Cuanto más bajo el valor, peor calidad. El máximo es el valor de la calidad dada por el vídeo original.
+				</p>
+
+				<label for = "E_calidadAudio">Calidad del audio:</label>
+				<input type = "range" value = "1.0" name = "E_calidadAudio" id = "E_calidadAudio" min = "-1.0" max = "10.0" step = "0.01">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Tasa de Bits para el audio</h5>
+
+				<p>En valores enteros del 32 al 500, velocidad en Kb/s a la que queremos que se desarrolle la codificación del audio. 320 Kb/s por defecto.
+                                   ¡Cuidado con poner velocidades muy bajas!
+				</p>
+
+				<label for = "E_audioBitrate" >Tasa de Bits (audio):</label>
+				<input type = "range" value = "320" name = "E_audioBitrate" id = "E_audioBitrate" min = "32" step = "1" max = "500">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Codificación en dos pasos</h5>
+
+				<p>Active esta opción para cambiar la codificación en un paso predeterminada a dos pasos.
+				</p>
+
+				<label for = "E_twopass">Codificación en dos pasos:</label>
+				<input type = "checkbox" value = "false" id = "E_twopass" name = "E_twopass">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Deinterlace</h5>
+
+                <p>Esta opción permite convertir un vídeo interlazado, como los de las señales analógicas de televisión, en uno desinterlazado.
+				</p>
+                                
+                <label for = "E_Deinterlace">Deinterlace:</label>
+				<input type = "checkbox" value = "true" id = "E_Deinterlace" name = "deinterlace">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Sin escalado</h5>
+
+				<p>Marca esta opción para evitar que el vídeo aumente su peso, en la medida de lo posible, para lo cual se utilizará una mayor tasa de frames o más canales.
+				</p>
+
+				<label for = "E_Escalado">Sin escalado:</label>
+				<input type = "radio" value = "true" id = "E_Escalado" name = "E_Escalado">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Eliminar ruido</h5>
+
+				<p>Elimina el ruido del video escogido.
+				</p>
+
+				<label for = "E_denoise">Eliminación del ruido:</label>
+				<input type = "checkbox" id = "E_denoise" value ="false" name = "E_denoise">
+
+			</div>
+
+			
+
+			<div class = "itemFormulario3">
+
+				<h5>Brillo</h5>
+
+				<p>De -1.0 a 1.0 con valor por defecto de 0.0 Cuanto más bajo el valor más oscuro el vídeo y viceversa.
+				</p>
+
+				<label for = "E_brightness">Brillo:	</label>
+				<input type = "range" name = "E_brightness" value = "0.0" id = "E_brightness" min = "-1.0" max = "1.0" step = "0.01">
+
+			</div>
+			
+			<div class = "itemFormulario3">
+
+				<h5>Contraste</h5>
+
+				<p>De 0.1 a 10.0 con valor por defecto de 1.0 Cuanto más bajo el valor más oscuro el vídeo y viceversa.
+				</p>
+
+				<label for = "E_contrast">Contraste:</label>
+				<input type = "range" name ="E_contrast" value = "1.0" id = "E_contrast" min = "0.1" max = "10.0" step = "0.01">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Gamma</h5>
+
+				<p>De 0.1 a 10.0 con valor por defecto de 1.0 Cuanto más bajo el valor más oscuro el vídeo y viceversa.
+				</p>
+
+				<label for = "E_gamma">Gamma:</label>
+				<input type = "range" name = "E_gamma" value = "1.0" id = "E_gamma" min = "0.1" max = "10.0" step = "0.01">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Saturación</h5>
+
+				<p>De 0.1 a 10.0 con valor por defecto de 1.0 Cuanto más bajo el valor, el vídeo adquirirá una tonalidad más grisácea.
+				</p>
+
+				<label for = "E_saturation">Saturación:</label>
+				<input type = "range" id = "E_saturation" value = "1.0" name = "E_saturation" min = "0.1" max = "10.0" step = "0.01">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Silenciar vídeo</h5>
+
+				<p>Elimina el sonido del video escogido.
+				</p>
+
+				<label for = "E_noaudio">Silenciar:
+				</label>
+
+				<input type = "checkbox" id= "E_noaudio" value = "true" name = "E_noaudio">
+
+			</div>
+
+			<div class = "itemFormulario3">
+
+				<h5>Obtener sonido</h5>
+
+				<p>Devuelve únicamente el sonido del vídeo escogido manteniendo el formato seleccionado al inicio del formulario.
+				</p>
+
+				<label for = "E_novideo">Obtener sonido:</label>
+				<input type = "checkbox" id = "E_novideo" value = "false" name = "E_novideo">
+
+			</div>
+
+			<!Quedan disponibles algunos métodos para asignar licencias, artista,... Así como los de tiempo, deinterlace, samplerate y alguno más>
+		
+			<!Suponiendo que como antes se cumplen todas las restricciones de las etiquetas, al pulsar ACEPTAR nos lleva a PaginaSeleccion.html>
+
+			<input class = "btnFormulario3" type = "submit" value = "Aceptar" id = "E_btn_AceptarConversion">
+			<br>
+			<br>
+			<br>
+
+		</form>
+	</div>
+
+	<script type="text/javascript" src = "particles.js"></script>
+	<script type="text/javascript" src = "configuracion.js"></script>
+
+</body>
+<!Parte de la información aquí usada ha sido obtenida de CSSLab>
+</html>
+
+
